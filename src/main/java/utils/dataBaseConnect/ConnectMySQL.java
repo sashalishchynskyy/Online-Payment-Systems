@@ -64,4 +64,11 @@ public class ConnectMySQL {
     }
 
 
+    private static void loadJDBCDriver() {
+        try {
+            Class.forName("com.sql.mysql.jdbc");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 }
