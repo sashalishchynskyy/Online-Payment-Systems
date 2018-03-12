@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="486.0" y="269.0">menu.SignUpMenu</node>
+    <node x="402.5" y="438.0">menu.StartMenu</node>
+    <node x="187.0" y="724.0">security.Password</node>
+    <node x="374.0" y="168.0">utils.scanner.menuScanner.StartMenuScanner</node>
+    <node x="422.5" y="628.0">main.Main</node>
+    <node x="597.0" y="168.0">utils.scanner.PasswordScanner</node>
+    <node x="0.0" y="724.0">view.SignUpMenuView</node>
+    <node x="0.0" y="168.0">view.SignInMenuView</node>
+    <node x="196.0" y="168.0">utils.scanner.menuScanner.SignInMenuScanner</node>
+    <node x="716.0" y="292.0">view.StartMenuView</node>
+    <node x="473.7045454545454" y="0.0">utils.scanner.ScannerTool</node>
+    <node x="83.2727272727272" y="269.0">menu.SignInMenu</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="utils.scanner.menuScanner.StartMenuScanner" target="utils.scanner.ScannerTool">
+      <point x="0.0" y="-25.5" />
+      <point x="475.5" y="148.0" />
+      <point x="541.5795454545454" y="148.0" />
+      <point x="-22.625" y="59.0" />
+    </edge>
+    <edge source="utils.scanner.PasswordScanner" target="utils.scanner.ScannerTool">
+      <point x="44.5" y="-25.5" />
+      <point x="730.5" y="138.0" />
+      <point x="632.0795454545454" y="138.0" />
+      <point x="67.875" y="59.0" />
+    </edge>
+    <edge source="utils.scanner.menuScanner.SignInMenuScanner" target="utils.scanner.ScannerTool">
+      <point x="0.0" y="-25.5" />
+      <point x="275.0" y="138.0" />
+      <point x="496.3295454545454" y="138.0" />
+      <point x="-67.875" y="59.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="696.0" y="405.5" />
+  <SelectedNodes>
+    <node>menu.SignUpMenu</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
