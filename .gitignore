@@ -8,3 +8,4 @@ target/
 # ignore .iml files
 *.iml
 src/main/java/main/MainTestClass.java
+src/main/java/main/MainTest.java
