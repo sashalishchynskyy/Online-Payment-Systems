@@ -1,20 +1,29 @@
 package utils.dataBaseConnect;
 
-import security.username.Username;
-
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class JDBCUtil {
 
-    public static void queryDatabase(String query) {
+    public static String queryDatabase(String query, String columnLabel) {
         try (Connection connection = ConnectMySQL.getConnection();
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(query)) {
-            System.out.println(Username.getUsername(resultSet));
+            StringBuffer buffer = null;
+            while (resultSet.next()) {
+                buffer = new StringBuffer();
+                buffer.append(resultSet.getString(columnLabel));
+            }
+            if (buffer != null) {
+                return buffer.toString();
+            }
         } catch (SQLException e) {
             DataBaseUtil.processException(e);
             e.printStackTrace();
         }
+        return null;
     }
 
     public static void updateDatabase(String updates) {
