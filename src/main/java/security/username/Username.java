@@ -20,9 +20,8 @@ public class Username {
     }
 
     public static String getUsername() {
-        String columnLabel = "username";
-        String query = "Select * FROM usernames WHERE idUsername = 1";
+        String query = "Select * FROM usernames WHERE username = '" + username + "'";
 
-        return JDBCUtil.queryDatabase(query, columnLabel);
+        return JDBCUtil.queryDatabase(query, USERNAME_COLUMN);
     }
 }
