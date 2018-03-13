@@ -7,6 +7,8 @@ public class Username {
     private static String username;
     private final static String USERNAMES_TABLE = "usernames";
     private final static String USERNAME_COLUMN = "username";
+    private final static String ID_COLUMN = "idUsername";
+
 
     public static void checkUsername() {
         username = LoginScanner.getLogin();
