@@ -7,5 +7,4 @@ target/
 *.war
 # ignore .iml files
 *.iml
-src/main/java/main/MainTestClass.java
-src/main/java/main/MainTest.java
+src/main/java/main/TestMain.java
