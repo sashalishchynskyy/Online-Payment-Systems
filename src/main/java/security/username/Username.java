@@ -12,11 +12,11 @@ public class Username {
 
     public static void checkUsername() {
         username = LoginScanner.getLogin();
-//        if (getUsername()) {
-//            System.out.println("All right!");
-//        } else {
-//            System.out.println("Didn't find");
-//        }
+        if (getUsername() != null) {
+            System.out.println("All right!");
+        } else {
+            System.out.println("Didn't find");
+        }
     }
 
     public static String getUsername() {
