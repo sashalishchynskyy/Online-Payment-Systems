@@ -19,8 +19,8 @@ public class Username {
         }
     }
 
-    public static String getUsername() {
-        String query = "Select * FROM usernames WHERE username = '" + username + "'";
+    private static String getUsername() {
+        String query = "Select * FROM " + USERNAMES_TABLE + " WHERE " + USERNAME_COLUMN + " = '" + username + "'";
 
         return JDBCUtil.queryDatabase(query, USERNAME_COLUMN);
     }
